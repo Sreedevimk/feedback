@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch data from the server
-    axios.get('http://localhost:4000')
+    axios.get('http://localhost:4000/feedback')
       .then((res) => {
         setRows(res.data); // Assuming res.data is an array of courses
       })
